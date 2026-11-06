@@ -3,65 +3,59 @@ import '../styles/global.css';
 ---
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ducky is an independent creative studio making good ideas impossible to ignore." />
-  <meta name="theme-color" content="#f7f7ef" />
-  <title>Ducky® — Good ideas make waves</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <div class="site-shell">
-    <header class="header wrap">
-      <a href="#top" class="logo" aria-label="Ducky home">ducky<span>®</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">What we do</a><a href="#contact">Contact</a></nav>
-      <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Spoken</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Spoken</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#contact">Contact</a>
+        <a href="#features">Features</a>
+        <a href="#github">Github</a>
+      </nav>
     </header>
-
     <main id="top">
-      <section class="hero wrap">
-        <div class="hero-copy">
-          <div class="eyebrow reveal"><span class="status-dot"></span> A LITTLE STUDIO WITH BIG IDEAS</div>
-          <h1 class="reveal">Good ideas<br />make <span class="waves-word">waves<span class="spark">✳</span></span><span class="period">.</span></h1>
-          <div class="hero-bottom reveal"><p>We make brands and digital experiences that stand out, feel good, and go somewhere.</p><a class="round-link" href="#about" aria-label="Scroll to learn more">↓</a></div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-icons" aria-hidden="true">
+          <img class="icon-gray" src="/images/Waddle-gray.png" alt="" width="50" height="50" />
+          <img class="icon-main" src="/images/Waddle.png" alt="" width="106" height="106" />
+          <img class="icon-green" src="/images/Waddle-green.png" alt="" width="48" height="48" />
+          <img class="icon-gold" src="/images/Waddle-gold.png" alt="" width="43" height="43" />
         </div>
-        <div class="hero-art reveal" aria-label="A playful abstract duck illustration" role="img">
-          <div class="art-top"><span>CREATIVE BY NATURE</span><span>✳ &nbsp; EST. TODAY</span></div>
-          <div class="sun"></div><div class="duck-body"></div><div class="duck-head"><span class="duck-eye"></span><span class="duck-beak"></span></div>
-          <div class="water water-one"></div><div class="water water-two"></div><div class="water water-three"></div>
-          <div class="art-stamp">MADE TO<br />MAKE WAVES <span>↗</span></div>
-          <div class="art-bottom"><span>IDEAS IN MOTION</span><span>01 — 03</span></div>
+        <h1 id="hero-title">Ducky your daily Helper</h1>
+        <p class="hero-subtitle">100% Free and OpenSource</p>
+        <div class="hero-actions">
+          <a class="hero-button button-primary" href="#download">Download</a>
+          <a class="hero-button button-secondary" href="#github">Github</a>
         </div>
-        <div class="vertical-note">INDEPENDENT CREATIVE STUDIO &nbsp; ✳ &nbsp; AVAILABLE EVERYWHERE</div>
+        <p class="hero-description">Speech to text, writing, vision talk, notes, clipboard all Free &amp; local</p>
       </section>
-      <div class="ticker" aria-hidden="true"><div class="ticker-track">GOOD THINKING <span>✳</span> GOOD DESIGN <span>✳</span> GOOD ENERGY <span>✳</span> GOOD THINKING <span>✳</span> GOOD DESIGN <span>✳</span> GOOD ENERGY <span>✳</span></div></div>
-      <section id="about" class="intro wrap section-pad">
-        <div class="section-label reveal"><span>01 / HELLO THERE</span><span class="small-star">✳</span></div>
-        <div class="intro-content reveal"><h2>Making a little<br /><em>more possible.</em></h2><div class="intro-text"><p>Big things start with a little spark. We bring curious minds, thoughtful design, and a healthy dose of optimism to every idea.</p><a class="text-link" href="#work">GET TO KNOW US <span>↗</span></a></div></div>
-      </section>
-      <section id="work" class="services section-pad"><div class="wrap"><div class="section-label reveal"><span>02 / WHAT WE DO</span><span>THOUGHTFUL FROM THE START ↘</span></div><div class="services-heading reveal"><h2>Good from<br /><em>every angle.</em></h2><p>From the first scribble to the final detail, we bring the pieces together.</p></div>
-        <div class="service-list">
-          <article class="service-row reveal"><span class="service-number">01</span><h3>Brand identity</h3><p>Distinctive worlds for ideas worth sharing.</p><span class="service-arrow">↗</span></article>
-          <article class="service-row reveal"><span class="service-number">02</span><h3>Digital experiences</h3><p>Thoughtful websites made to move people.</p><span class="service-arrow">↗</span></article>
-          <article class="service-row reveal"><span class="service-number">03</span><h3>Creative direction</h3><p>The big picture, right down to the details.</p><span class="service-arrow">↗</span></article>
-        </div></div></section>
-      <section id="contact" class="contact wrap section-pad"><div class="contact-card reveal"><div class="contact-top"><span>HAVE A GOOD ONE IN MIND?</span><span>✳</span></div><div class="contact-main"><h2>Let's make<br /><em>something good.</em></h2><a href="mailto:hello@ducky.studio" class="contact-button">Start a project <span>↗</span></a></div><div class="contact-bottom"><span>GOOD IDEAS ARE BETTER TOGETHER.</span><span>DON'T BE A STRANGER ↗</span></div></div></section>
     </main>
-    <footer class="footer wrap"><a href="#top" class="logo">ducky<span>®</span></a><p>Made with a little sunshine. ☼</p><a href="#top">BACK TO TOP ↑</a></footer>
-  </div>
-  <script>
-    import { animate, inView, stagger } from 'motion';
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!reducedMotion) {
-      document.querySelectorAll('.reveal').forEach((element) => {
-        inView(element, () => { animate(element, { opacity: [0, 1], y: [24, 0] }, { duration: 0.7, easing: [0.22, 1, 0.36, 1] }); }, { amount: 0.15 });
+    <script>
+      const button = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('.site-nav');
+      function setMenu(open: boolean) {
+        button?.setAttribute('aria-expanded', String(open));
+        button?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        nav?.classList.toggle('is-open', open);
+      }
+      button?.addEventListener('click', () => setMenu(button.getAttribute('aria-expanded') !== 'true'));
+      nav?.addEventListener('click', (event) => {
+        if ((event.target as HTMLElement).closest('a')) setMenu(false);
       });
-      animate('.duck-head', { y: [0, -8, 0], rotate: [0, -3, 0] }, { duration: 4, repeat: Infinity, easing: 'ease-in-out' });
-      animate('.water', { x: [0, 12, 0] }, { duration: 4, delay: stagger(0.3), repeat: Infinity, easing: 'ease-in-out' });
-    }
-  </script>
-</body>
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && button?.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          button.focus();
+        }
+      });
+    </script>
+  </body>
 </html>
